@@ -11,3 +11,6 @@ Example:
   myArray => [3, 2, 1]
   otherArray => ['c', 'b', 'a']
 */
+
+
+// Solution
