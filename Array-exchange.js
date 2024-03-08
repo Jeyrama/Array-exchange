@@ -43,3 +43,10 @@ function exchangeWith(a, b) {
   while (a.length) b.unshift(a.shift())
   while (a.length < bLen) a.push(b.pop())
 }
+
+// or
+
+function exchangeWith(a, b, c=a.slice()) {
+  a.splice(0, a.length, ...b.reverse());
+  b.splice(0, b.length, ...c.reverse());
+}
