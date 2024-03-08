@@ -35,3 +35,11 @@ const exchangeWith = (a,b) => {
   a.reverse();
   b.reverse();
 }
+
+// or
+
+function exchangeWith(a, b) {
+  let bLen = b.length
+  while (a.length) b.unshift(a.shift())
+  while (a.length < bLen) a.push(b.pop())
+}
